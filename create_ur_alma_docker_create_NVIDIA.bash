@@ -1,4 +1,4 @@
-docker run -it \
+docker create -it \
 --network=host \
 --gpus all \
 --env="DISPLAY=:1" \
@@ -10,5 +10,5 @@ docker run -it \
 --env="NVIDIA_DRIVER_CAPABILITIES=all" \
 --volume="/dev:/dev" \
 --privileged \
---name uralma  \
-uralma
+--name ur-alma  \
+ur-alma

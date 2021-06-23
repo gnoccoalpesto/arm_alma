@@ -1,6 +1,5 @@
 docker run -it \
 --network=host \
---device=/dev/dri
 --gpus all \
 --env="DISPLAY=:1" \
 --env="QT_X11_NO_MITSHM=1" \
