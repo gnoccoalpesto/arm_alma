@@ -42,24 +42,24 @@ RUN apt install -y python-pip
 RUN apt install -y python3-pip
 
 #almax
-RUN apt install -y ros-melodic-moveit-visual-tools
-RUN apt install -y ros-melodic-pcl-conversions
-RUN apt install -y ros-melodic-pcl-ros
-RUN cd /catkin_ws/src && git clone https://github.com/alma-x/simulation-cv
-RUN cd /catkin_ws/src && git clone https://github.com/alma-x/almasim_ur3
-RUN cd /catkin_ws/src && git clone https://github.com/alma-x/ur3-control
+#RUN apt install -y ros-melodic-moveit-visual-tools
+#RUN apt install -y ros-melodic-pcl-conversions
+#RUN apt install -y ros-melodic-pcl-ros
+#RUN cd /catkin_ws/src && git clone https://github.com/alma-x/simulation-cv
+#RUN cd /catkin_ws/src && git clone https://github.com/alma-x/almasim_ur3
+#RUN cd /catkin_ws/src && git clone https://github.com/alma-x/ur3-control
 
 #RUN /bin/bash -c '. /opt/ros/melodic/setup.bash; cd /catkin_ws;catkin_make'
 
-RUN echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
+#RUN echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
 #RUN echo "source /catkin_ws/devel/setup.bash" >> ~/.bashrc
 
 # INSTALL RUNTIME SCRIPTS
-RUN mkdir /freedom
+#RUN mkdir /freedom
 #COPY ./freedom_register.py /freedom/
 #COPY ./freedom_keep_alive.py /freedom/
-COPY ./entrypoint/* /freedom/
-RUN chmod +x /freedom/START.sh
+#COPY ./entrypoint/* /freedom/
+#RUN chmod +x /freedom/START.sh
 
 #ENTRYPOINT service ssh restart && bash
 #ENTRYPOINT ["/freedom/entrypoint.sh"]

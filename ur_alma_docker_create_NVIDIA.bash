@@ -1,5 +1,5 @@
 docker run -it \
---network=host \
+--net=host \
 --gpus all \
 --env="DISPLAY=:1" \
 --env="QT_X11_NO_MITSHM=1" \
