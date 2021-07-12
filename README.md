@@ -5,6 +5,10 @@ config:
 chmod +x ./build_erc.sh ./ur_alma_docker_create_AMD.bash
 # build: ur-alma image
 ./build_erc.sh
+
+alma image is build from erc image
+
+./build_alma.sh
 # run: ur-alma container
 ./ur_alma_docker_create_AMD.bash
 
